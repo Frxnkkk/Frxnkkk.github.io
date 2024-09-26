@@ -30,8 +30,33 @@
     <div class="abstract">
         <h2>Abstract</h2>
         <p>
-            [Your abstract text goes here. Provide a brief summary of your research, 
-            including the problem addressed, methodology, key findings, and conclusions.]
+            This paper investigates a novel method for handling
+ with the scarcity of appropriate speech corpora for Text-to
+Speech (TTS) systems in the Thai language by repurposing
+ Automatic Speech Recognition (ASR) corpus. In this paper,
+ we focus on whether noisy ASR by exploiting the Miipher
+ speech restoration model approach and examine its suitability
+ for TTS corpus generation.Our study compares single-speaker
+ and multi-speaker Tacotron2 models trained on both original
+ and Miipher-processed datasets. Through a series of experiments
+ including A/B preference tests and Mean Opinion Score (MOS)
+ evaluations, we demonstrate the efficacy of our approach. Results
+ show a clear preference for Miipher-processed data over original
+ noisy data, with 67.65% of participants favoring the processed
+ audio. As expectedly, given the limited amount of data per
+ speaker in the multi-speaker dataset, the single-speaker TTS
+ model outperformed the multi-speaker model in preference tests,
+ with 63.55% of participants preferring the single-speaker system.
+ MOS evaluations revealed that Miipher-processed data achieved
+ the highest score of 3.69 ± 0.15, followed by the original noisy data
+ at 3.56 ± 0.17, while both TTS systems showed lower scores. These
+ f
+ indings indicate that repurposing ASR data with appropriate
+ processing can effectively improve speech quality, but translating
+ this improvement to TTS systems requires further investigation.
+ Our results suggest that the quantity of per-speaker data may be
+ more crucial than speaker diversity for TTS development using
+ processed ASR data.
         </p>
     </div>
     
