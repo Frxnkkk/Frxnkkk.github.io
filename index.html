@@ -9,18 +9,34 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
+        h1, h2, h3 {
             color: #000;
         }
-        .abstract, .audio-sample, .comparison {
+        .abstract, .audio-comparisons, .comparison {
+            margin-bottom: 40px;
+        }
+        .audio-example {
+            margin-bottom: 30px;
+        }
+        .audio-pair {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 20px;
+        }
+        .audio-item {
+            width: 48%;
         }
         audio {
             width: 100%;
+            margin-bottom: 10px;
+        }
+        .spectrogram {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -59,13 +75,52 @@ Speech (TTS) systems in the Thai language by repurposing
         </p>
     </div>
     
-    <div class="audio-sample">
-        <h2>Sample Audio</h2>
-        <audio controls>
-            <source src="path_to_your_audio_file.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p>This is sample audio</p>
+    <div class="audio-comparisons">
+        <h2>Audio Comparisons</h2>
+        
+        <div class="audio-example">
+            <h3>Example 1: And then Brynhild fell a-weeping till her heart broke.</h3>
+            <div class="audio-pair">
+                <div class="audio-item">
+                    <h4>LibriTTS</h4>
+                    <audio controls>
+                        <source src="path_to_libriTTS_audio1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <img src="path_to_libriTTS_spectrogram1.png" alt="LibriTTS Spectrogram" class="spectrogram">
+                </div>
+                <div class="audio-item">
+                    <h4>LibriTTS-R</h4>
+                    <audio controls>
+                        <source src="path_to_libriTTS-R_audio1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <img src="path_to_libriTTS-R_spectrogram1.png" alt="LibriTTS-R Spectrogram" class="spectrogram">
+                </div>
+            </div>
+        </div>
+        
+        <div class="audio-example">
+            <h3>Example 2: I want to be near to them--to help them.</h3>
+            <div class="audio-pair">
+                <div class="audio-item">
+                    <h4>LibriTTS</h4>
+                    <audio controls>
+                        <source src="path_to_libriTTS_audio2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <img src="path_to_libriTTS_spectrogram2.png" alt="LibriTTS Spectrogram" class="spectrogram">
+                </div>
+                <div class="audio-item">
+                    <h4>LibriTTS-R</h4>
+                    <audio controls>
+                        <source src="path_to_libriTTS-R_audio2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <img src="path_to_libriTTS-R_spectrogram2.png" alt="LibriTTS-R Spectrogram" class="spectrogram">
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="comparison">
